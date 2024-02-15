@@ -136,7 +136,7 @@
 
       }
 
-      socket.on('recive-private-message', messageobject => {
+      socket.on('private-message', messageobject => {
         // Check if the message is meant for the current chat user or if it's a group message
         // if (currentchatuser === messageobject.sender || currentchatuser === messageobject.reciver) {
         putincomingmsg(messageobject.message);
